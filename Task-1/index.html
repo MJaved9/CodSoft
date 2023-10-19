@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50; /* Dark background color */
+            color: #7f8283; /* Light text color */
+        }
+
+        header {
+            background-color: #3498db; /* Header background color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #3498db;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #2980b9;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+
+        .bio {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .skills, .projects, .resume, .contact {
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #3498db; /* Section header color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline-block;
+            background-color: #3498db; /* Skill badge background color */
+            color: #fff;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .projects div {
+            margin-bottom: 30px;
+        }
+
+        .projects h3 {
+            color: #3498db; /* Project title color */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Hide menu toggle by default and show in mobile view */
+        @media (max-width: 767px) {
+            .menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <button class="navbar-toggler menu-toggle" id="menu-toggle" type="button" data-toggle="collapse" data-target="#menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col-8">
+                    <h1>Mohammad Javed</h1>
+                    <p>Full Stack Web Developer</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section id="about">
+        <img src="./assest/3.png" alt="Your 3D Image" style="width: 40%;">
+        <div class="bio">
+            <p>I'am Mohammad Javed
+                Ambitious and adventurous Aspiring FullStack MERN Developer with good knowledge in React, Node, Express, MongoDB, Bootstrap, Chakra-UI, and Rest API. Passionate about coding and learning new technologies, Looking forward to working in a reputed company. I love, MERN but I can pick up another framework or language according to my needs and get my work done!</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Node js</li>
+            <li>Mongo db</li>
+            <li>Express js</li>
+            <li>Chakra UI</li>
+            <li>DSA</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>Fashion-Club</h3>
+            <p>Fashion club is An Ecommerce website that deals in luxury fashion accessories like Clothing, Shoes, Bags, Accessories, Jewelry etc.</p>
+            <a href="https://fashionclub-three.vercel.app/" target="_blank"><img src="./assest/Screenshot (266).png" alt="Project 1"></a>
+        </div>
+
+        <div>
+            <h3>StyleCraze Clone</h3>
+            <p>This project is a clone of Stylecraze.com which is well known online Blog website. The company specializes in fast fashion, and products include Makeups, accessories, shoes, beauty products and many more things Blogs.</p>
+           <a href="https://stylecrazeapp.vercel.app/" target="_blank"><img src="./assest/Stylecraze.png" alt="Project 2"></a> 
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <p>Download my <a href="https://drive.google.com/file/d/1uIiM9y6yTkeqH_6p2avgLDZXIAOhqaoj/view" target="_blank" download>resume</a> in PDF format.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: javed233638@gmail.com</p>
+        <p>Phone: +91 9517197442</p>
+        <p>Linkdin: <a href="https://www.linkedin.com/in/mohammad-javed-517a991a0/" target="_blank" style="text-decoration: none;">Click here</a></p>
+        <p>Github-UserName:MJaved9</p>
+    </section>
+<br/>
+<p></p>
+    <footer>
+        &copy; 2023 Your Name | All rights reserved
+    </footer>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
